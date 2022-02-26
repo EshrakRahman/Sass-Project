@@ -1,0 +1,40 @@
+
+.header-area{
+  padding: 20px 0;
+
+  .logo{
+    float: left;
+    width: 230px;
+
+    a{
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .menu{
+    width: 1000px;
+    float: right;
+    margin-left: 30px;
+
+    ul{
+      text-align: right;
+
+      li{
+        display: inline-block;
+
+        a{
+          margin-left: 20px;
+          font-size: 18px;
+          font-weight: 500;
+
+          &:hover{
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+
+}
+

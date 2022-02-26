@@ -10,9 +10,16 @@
     margin: 0 auto;
 }
 
+.fix:before, fix:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
 a{
     text-decoration: none;
     color: $black;
+    transition: .3s;
 }
 
 img{
@@ -21,7 +28,27 @@ img{
 }
 
 ul{
-    letter-spacing: none;
+    list-style: none;
+}
+
+/*Background css*/
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+        opacity: .75;
+        z-index: -1;
+    }
 }
 
 // margin & padding
