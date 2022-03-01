@@ -25,6 +25,7 @@ a {
 
 img {
   max-width: 100%;
+  max-height: 100%;
   vertical-align: middle;
 }
 
@@ -36,6 +37,7 @@ ul {
 .bg {
   background-position: center;
   background-size: cover;
+  height: 800px;
   position: relative;
   z-index: 2;
 }
@@ -49,6 +51,29 @@ ul {
   background-color: #333;
   opacity: 0.75;
   z-index: -1;
+}
+
+/*Button Css*/
+.btn {
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 3px;
+  color: #fff;
+}
+.btn.box-btn {
+  background-color: #ff7720;
+}
+.btn.box-btn:hover {
+  background-color: #333;
+}
+.btn.border-btn {
+  border: 2px solid #ff7720;
+  padding: 8px 40px;
+}
+.btn.border-btn:hover {
+  border-color: #333;
 }
 
 .pt-10 {
@@ -243,6 +268,9 @@ body {
 .banner-content p {
   max-width: 500px;
   margin: 30px auto;
+}
+.banner-content a {
+  margin: 0 10px;
 }
 
 .header-area {
